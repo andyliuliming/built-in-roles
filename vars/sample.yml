@@ -1,0 +1,2 @@
+gluster_cluster: ['172.16.8.4'] # "{{ groups.gluster | join(',') }}"
+gluster_host_name: '172.16.8.4'

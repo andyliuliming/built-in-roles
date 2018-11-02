@@ -1,0 +1,11 @@
+
+# - name: Deploy deploy key
+  # become: true
+  # become_user: root
+  # copy: 
+  #   src: "deploy_keys/{{ item }}"
+  #   dest: "/{{ ansible_user }}/.ssh/{{ item }}" # 假定全部用的root
+  #   mode: 0600
+  # with_items:
+  #   - id_rsa.pub
+  #   - id_rsa

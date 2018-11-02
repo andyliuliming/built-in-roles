@@ -1,0 +1,30 @@
+# ---
+# - name: Generate ssh key
+#   # become: true
+#   # become_user: root
+#   user:
+#     name: "{{ ansible_user }}"
+#     generate_ssh_key: yes
+#     ssh_key_bits: 2048
+#     ssh_key_file: .ssh/id_rsa
+
+# - name: Add ssh keys
+#   # become: true
+#   # become_user: root
+#   authorized_key:
+#     user: "{{ ansible_user }}"
+#     exclusive: no
+#     state: present
+#     key: '{{ item }}'
+#   with_file:
+#     - ssh_pub_keys/andy
+
+# - name: Disable password login
+#   # become: true
+#   # become_user: root
+#   lineinfile: dest=/etc/ssh/sshd_config regexp="^#?PasswordAuthentication" line="PasswordAuthentication no"
+
+# - name: Restart sshd
+#   become: true
+#   become_user: root
+#   service: name=sshd state=restarted
