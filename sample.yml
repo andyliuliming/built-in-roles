@@ -5,7 +5,7 @@
     - vars/sample.yml
 
   roles:
-    # - { role: 'kunlun.lamp_small' }
-    - { role: 'kunlun.lamp_mid' }
+    - { role: 'kunlun.lamp_small' }
+    # - { role: 'kunlun.lamp_mid' }
     # - { role: 'kunlun.lamp_large' }
     # - { role: 'kunlun.lamp_maximum' }
