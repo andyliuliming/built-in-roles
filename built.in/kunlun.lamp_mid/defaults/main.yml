@@ -1,5 +1,5 @@
 # Firewall configuration.
-firewall_allowed_tcp_ports:
+firewall_allowed_tcp_ports_xx:
   - 22
   # For Gluster.
   - 111

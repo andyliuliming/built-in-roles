@@ -1,4 +1,8 @@
 ---
+- name: Print Variables
+  debug:
+    msg: "firewall_allowed_tcp_ports is {{ firewall_allowed_tcp_ports }}"
+
 - name: Ensure iptables is present.
   package: name=iptables state=present
 

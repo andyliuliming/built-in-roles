@@ -15,6 +15,8 @@
     name: geerlingguy.firewall
   become: true
   become_user: root
+  vars:
+    firewall_allowed_tcp_ports: "{{ firewall_allowed_tcp_ports_xx }}"
 
 - import_role:
     name: geerlingguy.glusterfs
@@ -32,7 +34,7 @@
 
 - name: Print variables
   debug:
-    msg: "inventory is {{ inventory_hostname }} groups gluster is {{ gluster_cluster }}"
+    msg: "##############firewall_allowed_tcp_ports is {{ firewall_allowed_tcp_ports }} "
 
 - name: Configure Gluster volume.
   become: true
